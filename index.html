@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fffdf9">
+    <meta name="description" content="A little birthday story, made just for Sammy.">
+    <title>A little something for Sammy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Sammy's birthday, back to top">
+        <span class="wordmark-mark" aria-hidden="true">s.</span>
+        <span>THE SAMMY ARCHIVE</span>
+      </a>
+      <span class="header-note"><span class="status-dot" aria-hidden="true"></span> A day made for you</span>
+    </header>
+
+    <main>
+      <section class="opening" id="top" aria-labelledby="opening-title">
+        <div class="opening-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> A SMALL NOTE, WITH BIG LOVE</p>
+          <h1 id="opening-title">For someone<br>who makes life <em>lovelier.</em></h1>
+          <p class="opening-intro">A few favorite things, a little birthday magic, and one very important person.</p>
+        </div>
+
+        <div class="envelope-wrap">
+          <button class="envelope-button" id="open-letter" type="button" aria-expanded="false" aria-controls="birthday-letter" aria-describedby="game-instructions">
+            <span class="envelope-shadow" aria-hidden="true"></span>
+            <span class="envelope" aria-hidden="true">
+              <span class="letter-paper">
+                <span class="letter-paper-top">A NOTE FOR</span>
+                <span class="letter-paper-name">Sammy</span>
+                <span class="letter-paper-heart">♡</span>
+              </span>
+              <span class="envelope-back"></span>
+              <span class="envelope-front"></span>
+              <span class="envelope-flap"></span>
+              <span class="envelope-seal">S</span>
+            </span>
+            <span class="envelope-hint"><span class="hint-sparkle" aria-hidden="true">✳</span> Open your little letter</span>
+          </button>
+          <p class="game-instructions" id="game-instructions">Catch the letter, or type <kbd>211</kbd> to let it sit still.</p>
+          <input class="unlock-code-input" id="unlock-code" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="3" autocomplete="off" aria-label="Enter the secret code">
+          <p class="game-feedback" id="game-feedback" role="status" aria-live="polite">The letter is feeling a little shy...</p>
+          <span class="envelope-doodle doodle-one" aria-hidden="true">✳</span>
+          <span class="envelope-doodle doodle-two" aria-hidden="true">♡</span>
+        </div>
+
+        <div class="letter-message" id="birthday-letter" aria-live="polite" aria-hidden="true">
+          <span class="letter-kicker">DEAR SAMMY,</span>
+          <p>Hi!!
+You're finally 20!!!!!!
+Damn, we're out of teens!
+Here's to your first "adulthood" year and to 1000 more to come !Today is all about celebrating the joy you bring into every room — and every ordinary day.
+Hope you are blessed with lots of happiness, lot's of blessings on diwali and well, lots and lots of everything!
+You look soo pretty when you smile it's almost hypnotic, so keep smiling!
+Take care and enjoy your special day bestie!
+Will visit you soon!!</p>
+          <span class="letter-signoff">With all my love <span aria-hidden="true">♡</span></span>
+        </div>
+
+        <a class="scroll-cue" href="#memories">
+          <span>THERE'S MORE BELOW</span>
+          <span class="scroll-cue-arrow" aria-hidden="true">↓</span>
+        </a>
+        <span class="opening-stamp" aria-hidden="true">MADE<br>WITH<br>♡</span>
+      </section>
+
+      <section class="memories" id="memories" aria-labelledby="memories-title" hidden>
+        <div class="section-heading">
+          <p class="eyebrow"><span class="eyebrow-line"></span> THE GOOD STUFF</p>
+          <h2 id="memories-title">Little moments,<br><em>big favorites.</em></h2>
+          <p class="section-intro">The kind of memories that make you smile before you even realize it.</p>
+        </div>
+
+        <article class="memory memory-one">
+          <div class="memory-art-wrap">
+            <div class="photo-gallery">
+              <div class="photo-stack" aria-hidden="true" inert>
+                <button class="photo-card photo-card-one" type="button" data-photo-src="imgs/1-1.jpg" data-photo-alt="Memory one, photo one" aria-label="View memory one, photo one">
+                  <img src="imgs/1-1.jpg" alt="">
+                </button>
+                <button class="photo-card photo-card-two" type="button" data-photo-src="imgs/1-2.jpg" data-photo-alt="Memory one, photo two" aria-label="View memory one, photo two">
+                  <img src="imgs/1-2.jpg" alt="">
+                </button>
+                <button class="photo-card photo-card-three" type="button" data-photo-src="imgs/1-3.jpg" data-photo-alt="Memory one, photo three" aria-label="View memory one, photo three">
+                  <img src="imgs/1-3.jpg" alt="">
+                </button>
+              </div>
+              <button class="photo-frame" type="button" aria-label="Show photos from memory one" aria-expanded="false">
+                <img class="frame-photo" src="imgs/1-1.jpg" alt="Sammy enjoying a sunny day outdoors">
+                <span class="photo-frame-caption">a day in the sun</span>
+                <span class="photo-number">01 / 03</span>
+              </button>
+            </div>
+            <span class="memory-spark memory-spark-one" aria-hidden="true">✳</span>
+          </div>
+          <div class="memory-copy">
+            <span class="memory-label">THE LITTLE ESCAPES</span>
+            <h3>Somewhere with<br>no plans at all.</h3>
+            <span class="copy-rule" aria-hidden="true"></span>
+            <p class="typewriter" aria-label="The best days never needed a big plan. Just good company, a little sunshine, and all the time in the world." data-message="The best days never needed a big plan. Just good company, a little sunshine, and all the time in the world."></p>
+          </div>
+        </article>
+
+        <article class="memory memory-two">
+          <div class="memory-art-wrap">
+            <div class="photo-gallery">
+              <div class="photo-stack" aria-hidden="true" inert>
+                <button class="photo-card photo-card-one" type="button" data-photo-src="imgs/2-1.jpg" data-photo-alt="Memory two, photo one" aria-label="View memory two, photo one">
+                  <img src="imgs/2-1.jpg" alt="">
+                </button>
+                <button class="photo-card photo-card-two" type="button" data-photo-src="imgs/2-2.jpg" data-photo-alt="Memory two, photo two" aria-label="View memory two, photo two">
+                  <img src="imgs/2-2.jpg" alt="">
+                </button>
+                <button class="photo-card photo-card-three" type="button" data-photo-src="imgs/2-3.jpg" data-photo-alt="Memory two, photo three" aria-label="View memory two, photo three">
+                  <img src="imgs/2-3.jpg" alt="">
+                </button>
+                <button class="photo-card photo-card-four" type="button" data-photo-src="imgs/2-4.jpg" data-photo-alt="Memory two, photo four" aria-label="View memory two, photo four">
+                  <img src="imgs/2-4.jpg" alt="">
+                </button>
+              </div>
+              <button class="photo-frame" type="button" aria-label="Show photos from memory two" aria-expanded="false">
+                <img class="frame-photo" src="imgs/2-1.jpg" alt="A favorite moment together">
+                <span class="photo-frame-caption">make a wish</span>
+                <span class="photo-number">02 / 04</span>
+              </button>
+            </div>
+            <span class="memory-spark memory-spark-two" aria-hidden="true">♡</span>
+          </div>
+          <div class="memory-copy">
+            <span class="memory-label">THE VERY BEST TRADITION</span>
+            <h3>One more candle.<br>Infinite wishes.</h3>
+            <span class="copy-rule" aria-hidden="true"></span>
+            <p class="typewriter" aria-label="Here's to another trip around the sun, and to all the little things that make being you so wonderful. Save me a slice!" data-message="Here's to another trip around the sun, and to all the little things that make being you so wonderful. Save me a slice!"></p>
+          </div>
+        </article>
+
+        <article class="memory memory-three">
+          <div class="memory-art-wrap">
+            <div class="photo-gallery">
+              <div class="photo-stack" aria-hidden="true" inert>
+                <button class="photo-card photo-card-one" type="button" data-photo-src="imgs/3-1.jpg" data-photo-alt="Memory three, photo one" aria-label="View memory three, photo one">
+                  <img src="imgs/3-1.jpg" alt="">
+                </button>
+                <button class="photo-card photo-card-two" type="button" data-photo-src="imgs/3-2.jpg" data-photo-alt="Memory three, photo two" aria-label="View memory three, photo two">
+                  <img src="imgs/3-2.jpg" alt="">
+                </button>
+                <button class="photo-card photo-card-three" type="button" data-photo-src="imgs/3-3.png" data-photo-alt="Memory three, photo three" aria-label="View memory three, photo three">
+                  <img src="imgs/3-3.png" alt="">
+                </button>
+              </div>
+              <button class="photo-frame" type="button" aria-label="Show photos from memory three" aria-expanded="false">
+                <img class="frame-photo" src="imgs/3-1.jpg" alt="A favorite memory together">
+                <span class="photo-frame-caption">on to the next</span>
+                <span class="photo-number">03 / 03</span>
+              </button>
+            </div>
+            <span class="memory-spark memory-spark-three" aria-hidden="true">✷</span>
+          </div>
+          <div class="memory-copy">
+            <span class="memory-label">THE ADVENTURES AHEAD</span>
+            <h3>More memories<br>with you, please.</h3>
+            <span class="copy-rule" aria-hidden="true"></span>
+            <p class="typewriter" aria-label="Whatever this next year brings, I hope it's full of belly laughs, unexpected adventures, and people who love you as much as you deserve." data-message="Whatever this next year brings, I hope it's full of belly laughs, unexpected adventures, and people who love you as much as you deserve. P.S. I inserted the 3rd image to compensate for the first one, you look hot as hell in it!"></p>
+          </div>
+        </article>
+      </section>
+
+      <section class="finale" id="finale" aria-labelledby="finale-title" hidden>
+        <div class="balloons" aria-hidden="true">
+          <span class="balloon balloon-pink"></span>
+          <span class="balloon balloon-lilac"></span>
+          <span class="balloon balloon-yellow"></span>
+          <span class="balloon balloon-blue"></span>
+          <span class="balloon balloon-coral"></span>
+          <span class="balloon balloon-green"></span>
+          <span class="balloon balloon-peach"></span>
+          <span class="balloon balloon-violet"></span>
+        </div>
+        <div class="finale-content">
+          <span class="finale-sparkle" aria-hidden="true">✳</span>
+          <p class="eyebrow">YOUR DAY, YOUR YEAR, YOUR MOMENT</p>
+          <h2 id="finale-title">Happy Birthday<br><em>Sammy!</em></h2>
+          <p class="finale-note">The world is a little brighter with you in it.</p>
+          <span class="finale-heart" aria-hidden="true">♡</span>
+        </div>
+        <span class="finale-footer">MADE WITH LOVE, JUST FOR YOU</span>
+      </section>
+    </main>
+    <dialog class="photo-viewer" id="photo-viewer" aria-labelledby="photo-viewer-caption">
+      <button class="photo-viewer-close" type="button" aria-label="Close photo" autofocus>×</button>
+      <figure class="photo-viewer-figure">
+        <img class="photo-viewer-image" id="photo-viewer-image" alt="">
+        <figcaption class="photo-viewer-caption" id="photo-viewer-caption"></figcaption>
+      </figure>
+    </dialog>
+  </body>
+</html>
